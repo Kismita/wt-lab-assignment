@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style type="text/css">
+        h1 {
+            color: hsl(240, 2%, 32%);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 30px;
+            margin: 18px;
+            border: solid 2px;
+            border-radius: 7px;
+            border-color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn-round {
+            background-color: rgb(11, 175, 126);
+            padding: 10px 15px;
+            border-radius: 50%;
+            color: white;
+            border-color:rgb(11, 175, 126);
+        }
+
+        .btn-primary {
+            background-color: rgb(11, 175, 126);
+            color: white;
+            border-color:rgb(11, 175, 126);
+        }
+
+        .btn-secondary {
+            background-color: rgba(201, 219, 224, 0.76);
+            color: #708B97;
+            border-color:#CBD4D9;
+        }
+
+        .btn-destructive {
+            background-color: hsla(19, 88%, 53%, 0.781);
+            color: white;
+            border-color:#E0886A;
+        }
+
+        .btn-round:hover {
+            border-bottom-color: #479582;
+        }
+
+        .btn-primary:hover {
+            border-bottom-color: #479582;
+        }
+
+        .btn-secondary:hover {
+            border-bottom-color: #A1B4BB;
+
+        }
+
+        .btn-destructive:hover {
+            border-bottom-color: #B46D56;
+        }
+
+        .btn-round:active {
+            background-color: hsl(161, 45%, 66%);
+        }
+
+        .btn-primary:active {
+            background-color: rgba(38, 190, 150, 1.0);
+        }
+
+        .btn-secondary:active {
+            background-color: hsl(188, 27%, 62%);
+        }
+
+        .btn-destructive:active {
+            background-color: rgba(238, 131, 99, 1.0);
+        }
+
+        #btn-disable-round {
+            background-color:#B5E3D5;
+            border-color:#B5E3D5;
+            border-bottom-color: #B5E3D5;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor:not-allowed;
+        }
+
+        #btn-disable-primary {
+            background-color: #B5E3D5;
+            border-bottom-color:#B5E3D5;
+            border-color:#B5E3D5;
+            cursor:not-allowed;
+        }
+
+        #btn-disable-secondary {
+            background-color: #F6F7F8;
+            border-bottom-color:#EAEEF1;
+            border-color: #EAEEF1;
+            color:#C6D1D6;
+            cursor:not-allowed;
+        }
+
+        #btn-disable-destructive {
+            background-color: #F2CFC3;
+            border-bottom-color:#F2CFC3;
+            border-color:#F2CFC3;
+            cursor:not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buttons</h1>
+    <div>
+        <a href="#" class="btn btn-round">+</a>
+        <a href="#" class="btn btn-primary">Button</a>
+        <a href="#" class="btn btn-secondary">Button</a>
+        <a href="#" class="btn btn-destructive">Button</a>
+    </div>
+    <br />
+    <br />
+
+    <div>
+        <a href="#" class="btn btn-round" id="btn-disable-round">+</a>
+        <a href="#" class="btn btn-primary" id="btn-disable-primary">Button</a>
+        <a href="#" class="btn btn-secondary" id="btn-disable-secondary">Button</a>
+        <a href="#" class="btn btn-destructive" id="btn-disable-destructive">Button</a>
+    </div>
+    <br />
+    <br />
+
+</body>
+
+</html>

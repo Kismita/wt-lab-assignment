@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="dotted">Dotted</div>
+            <div class="solid">solid</div>
+            <div class="groove">groove</div>
+            <div class="inset">inset</div>
+            <div class="none">none</div>
+        </div>
+        <div>
+            <div class="dashed">dashed</div>
+            <div class="double">double</div>
+            <div class="ridge">ridge</div>
+            <div class="outset">outset</div>
+            <div class="hidden">hidden</div>
+        </div>
+    </main>
+</body>
+</html>
