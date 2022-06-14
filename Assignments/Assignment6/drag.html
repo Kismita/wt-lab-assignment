@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag&Drop</title>
+</head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200px;
+        font-size: 20px;
+    }
+    .box {
+        width: 200px;
+        height: 60px;
+        margin: 20px;
+        background-color: green;
+        border: 1px solid black;
+        color:white;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(92, 92, 92, 0.7);
+    }
+
+    div{
+        background-color:burlywood;
+        border: 1px solid;
+        align-items: center;
+        box-shadow: violet;
+    }
+    #box1{
+        position: absolute;
+    }
+    #box2{
+        position: absolute;
+        left: 250px;
+    }
+    #box3{
+        position: absolute; 
+        left: 500px;
+    }
+    
+
+   
+</style>
+
+<body onload="move('box1')">
+    <!-- <div class="container"> -->
+    <div class="box" id="box1"> <p>Ringer</p></div>
+    <div class="box" id="box2"> <p>Ringer</p></div>
+    <div class="box" id="box3"> <p>Roses</p></div>
+   <!-- </div> -->
+
+    <script>
+        let dragValue;
+        function move(id) {
+            let element1 = document.getElementById("box1");
+            let element2 = document.getElementById("box2");
+            let element3 = document.getElementById("box3");
+
+            element1.style.position = "absolute";
+            element1.onmousedown = function () {
+                dragValue = element1;
+            }
+            element2.style.position = "absolute";
+            element2.onmousedown = function () {
+                dragValue = element2;
+            }
+            element3.style.position = "absolute";
+            element3.onmousedown = function () {
+                dragValue = element3;
+            }
+        }
+        document.onmouseup = function (e) {
+            dragValue = null;
+        }
+        document.onmousemove = function (e) {
+            let x = e.pageX;
+            let y = e.pageY;
+
+            dragValue.style.left = x + "px";
+            dragValue.style.top = y + "px";
+        }
+    </script>
+
+</body>
+
+</html>
