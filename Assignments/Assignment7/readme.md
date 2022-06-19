@@ -20,4 +20,4 @@ Open apachi > conf >extra >httpd-vhosts.conf in notepad (run as administrator) T
  ServerName name.local
 </VirtualHost>
 then save
-Then open \etc\hosts in notepad add 127.0.01 name.local then you are ready to go:search localhost/location of your directory
+Then open /Applications/XAMPP/xamppfiles/htdocs/ in notepad add 127.0.01 name.local then you are ready to go:search localhost/location of your directory
